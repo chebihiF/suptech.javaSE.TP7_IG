@@ -26,19 +26,18 @@ public class Programme {
 
         JPanel centerPanel = new JPanel();
         GridLayout gridLayout = new GridLayout(2,2);
+        centerPanel.setLayout(gridLayout);
         JLabel nom_lbl = new JLabel("Nom :");
         nom_lbl.setFont(new Font("Arial",Font.BOLD,20));
         centerPanel.add(nom_lbl);
         centerPanel.add(new JTextField());
-        JLabel prenom_lbl = new JLabel("Prenom :");
+        JLabel prenom_lbl = new JLabel("Prénom :");
         prenom_lbl.setFont(new Font("Arial",Font.BOLD,20));
         centerPanel.add(prenom_lbl);
         centerPanel.add(new JTextField());
 
         mainPan.add(northPanel,BorderLayout.NORTH);
         mainPan.add(new JButton("South"),BorderLayout.SOUTH);
-        mainPan.add(new JButton("East"),BorderLayout.EAST);
-        mainPan.add(new JButton("West"),BorderLayout.WEST);
         mainPan.add(centerPanel,BorderLayout.CENTER);
 
 
